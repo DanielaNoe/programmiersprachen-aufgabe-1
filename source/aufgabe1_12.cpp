@@ -12,7 +12,7 @@ volume( double dRadius, double dHeight ) {
 //surface______________________________________________________________________
 double
 surface( double dRadius, double dHeight ) {
-    
+
     return 2.0 * M_PI * dRadius * ( dRadius + dHeight );
 }//surface
 

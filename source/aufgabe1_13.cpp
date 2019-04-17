@@ -4,7 +4,7 @@
 
 //factorial________________________________________________________________
 int
-factorial( int iValue ) {
+factorial( uint64_t iValue ) {
 
     int iResult{1};
 

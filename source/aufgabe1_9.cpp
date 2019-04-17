@@ -4,7 +4,7 @@
 
 //gcd__________________________________________________________________________
 int
-checksum( int iArg ) {
+checksum( uint64_t iArg ) {
 
     int iResult{0};
 
@@ -15,6 +15,7 @@ while ( iArg > 0 ) {
 }
         
     return iResult;
+
 }//checksum
 
 
@@ -26,6 +27,7 @@ TEST_CASE( "describe_checksum", "[checksum]" ) {
     REQUIRE( checksum( 123456 ) == 21 );
     REQUIRE( checksum( 100 )    == 1 );
     REQUIRE( checksum( 45031 )  == 13 );
+    REQUIRE( checksum( 117072 )  == 18 );
 }
 
 
